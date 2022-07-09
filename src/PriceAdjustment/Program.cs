@@ -17,7 +17,7 @@ namespace PriceAdjustment
         {
             try
             {
-                Mutex mutex = new Mutex(true, Application.ProductName+"__");
+                Mutex mutex = new Mutex(true, Application.ProductName);
                 if (mutex.WaitOne(0, false))
                 {
                     Run();
