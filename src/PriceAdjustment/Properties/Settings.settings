@@ -1,0 +1,76 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="PriceAdjustment.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="APP_CODE" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="APP_AUTH" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_SC_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_DYH_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_SC_PWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">lyc2010</Value>
+    </Setting>
+    <Setting Name="DB_DYH_UID" Type="System.String" Scope="User">
+      <Value Profile="(Default)">sdkdchkj</Value>
+    </Setting>
+    <Setting Name="DB_DYH_PWD" Type="System.String" Scope="User">
+      <Value Profile="(Default)">S2D0C0H6</Value>
+    </Setting>
+    <Setting Name="DB_TARGET_PATH" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_DYH_STR" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0; Data Source={0}; Jet OLEDB:System Database={1}; User Id={2}; Password={3}</Value>
+    </Setting>
+    <Setting Name="DB_SC_STR" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Provider=Microsoft.Jet.OLEDB.4.0; Data Source={0}; Jet OLEDB:Database Password={1}</Value>
+    </Setting>
+    <Setting Name="SC_PRICE_OLD" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">1.18</Value>
+    </Setting>
+    <Setting Name="DYH_PRICE_NEW" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.6102</Value>
+    </Setting>
+    <Setting Name="SC_PRICE_NEW" Type="System.Decimal" Scope="User">
+      <Value Profile="(Default)">0.6102</Value>
+    </Setting>
+    <Setting Name="DB_DYH_MDW" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Help" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">操作流程：
+  1. 选取修改后的数据文件保存地址，修改后的MDB文件保存在此
+  2. 多用户配置：
+      1）选择对应MDB MDW文件
+      2）配置价格
+      3）选择是否删除指定日期前数据
+  3.商场配置
+      1）选择MDB文件
+      2）配置价格
+      3）选择是否删除指定日期前数据
+  4.按【执行】按钮，结果看提示</Value>
+    </Setting>
+    <Setting Name="PRICE_DATA" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_TARGET_PATH_DYH" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="DB_TARGET_PATH_SC" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="AutoRun" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="AutoExit" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>
