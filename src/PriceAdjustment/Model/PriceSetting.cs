@@ -17,11 +17,10 @@ namespace PriceAdjustment.Model
         /// </summary>
         public static Dictionary<int, PriceItem> PriceList;
 
-
         /// <summary>
         /// 解析
         /// </summary>
-        public static void Parse(string data)
+        public static void Parse(DateTime startMonth,int count,string data)
         {
             if (!string.IsNullOrWhiteSpace(data))
             {
@@ -33,13 +32,9 @@ namespace PriceAdjustment.Model
                 PriceList = new Dictionary<int, PriceItem>(12);
             }
 
-            DateTime startMonth = DateTime.Now.AddDays(-1*DateTime.Now.Day+1).AddMonths(-1 * DateTime.Now.Month + 1);
-
-            for (int i = 0; i < 12; i++)
+            for (int i = 0; i < count; i++)
             {
-                var order = i + 1;
-
-                if (PriceList.ContainsKey(order))
+                if (PriceList.ContainsKey(i))
                 {
                     continue;
                 }
@@ -49,7 +44,7 @@ namespace PriceAdjustment.Model
                     Date = startMonth.AddMonths(i)
                 };
 
-                PriceList.Add(order, item);
+                PriceList.Add(i, item);
             }
 
         }

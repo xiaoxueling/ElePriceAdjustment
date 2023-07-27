@@ -260,5 +260,28 @@ namespace PriceAdjustment.Properties {
                 this["AutoExit"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        public global::System.DateTime Price_StartMonth {
+            get {
+                return ((global::System.DateTime)(this["Price_StartMonth"]));
+            }
+            set {
+                this["Price_StartMonth"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("12")]
+        public int Price_MonthCount {
+            get {
+                return ((int)(this["Price_MonthCount"]));
+            }
+            set {
+                this["Price_MonthCount"] = value;
+            }
+        }
     }
 }

@@ -3,14 +3,8 @@ using PriceAdjustment.DbCore;
 using PriceAdjustment.Model;
 using PriceAdjustment.Properties;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.IO;
-using System.Linq;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -390,62 +384,53 @@ namespace PriceAdjustment
                 Tbx_SC_Price_Old.Text = settings.SC_PRICE_OLD.ToString();
                 Tbx_SC_PRICE.Text = settings.SC_PRICE_NEW.ToString();
 
-                PriceSetting.Parse(settings.PRICE_DATA);
-
-                //电价赋值
-                foreach (var child in Table_Price.Controls)
-                {
-                    if(child is Panel)
-                    {
-                        foreach(var item in ((Panel)child).Controls)
-                        {
-                            try
-                            {
-                                if (item is DateTimePicker)
-                                {
-                                    var dateTimePicker = (DateTimePicker)item;
-
-                                    if (dateTimePicker.Name.StartsWith("Date_"))
-                                    {
-                                        var order = dateTimePicker.Name.Replace("Date_", string.Empty).ToInt();
-
-                                        var date = PriceSetting.PriceList[order]?.Date;
-                                        if (date != null)
-                                        {
-                                            dateTimePicker.Value = date.Value;
-                                        }
-                                    }
-                                }
-                            }
-                            catch
-                            { }
-
-                            try
-                            {
-                                if (item is TextBox)
-                                {
-                                    var textBox = (TextBox)item;
-
-                                    if (textBox.Name.StartsWith("Tbx_Price_"))
-                                    {
-                                        var order = textBox.Name.Replace("Tbx_Price_", string.Empty).ToInt();
-
-                                        var price = PriceSetting.PriceList[order]?.Price;
-                                        textBox.Text = price?.ToString() ?? string.Empty;
-                                    }
-                                }
-                            }
-                            catch
-                            { }
-                        }
-                    }
-                } 
+                InitPriceSetting();
 
                 ShowMsg("加载用户配置成功");
             }
             catch (Exception ex)
             {
                 ShowMsg("加载用户配置失败："+ex.Message,false);
+            }
+        }
+
+        private void InitPriceSetting(bool reset=false)
+        {
+            var priceData = string.Empty;
+            if (!reset)
+            {
+                Settings settings = Settings.Default;
+
+                if (settings.Price_StartMonth < DateTime.Now.AddYears(-10))
+                {
+                    settings.Price_StartMonth = DateTime.Now.AddDays(-1 * DateTime.Now.Day + 1).AddMonths(-1 * DateTime.Now.Month + 1);
+                }
+
+                Date_Start.Value = settings.Price_StartMonth;
+                Tbx_MonthCount.Value = settings.Price_MonthCount;
+                priceData = settings.PRICE_DATA;
+            }
+            else
+            {
+                PriceSetting.PriceList = null;
+                LP_PriceSetting.Controls.Clear();
+            }
+
+            PriceSetting.Parse(Date_Start.Value, (int)Tbx_MonthCount.Value, priceData);
+
+            //电价设置
+            for (int i = 0; i < PriceSetting.PriceList.Count; i++)
+            {
+                PriceSettingItem settingItem = new PriceSettingItem
+                {
+                    Order = i
+                };
+                var setting = PriceSetting.PriceList[i];
+                if (setting != null)
+                {
+                    settingItem.SetValue(setting.Date, setting.Price?.ToString() ?? string.Empty);
+                }
+                LP_PriceSetting.Controls.Add(settingItem);
             }
         }
 
@@ -476,74 +461,28 @@ namespace PriceAdjustment
                 settings.DB_SC_PWD= Tbx_SC_PWD.Text ;
                 settings.SC_PRICE_NEW=Tbx_SC_PRICE.Text.ToDecimal();
 
+                settings.Price_StartMonth = Date_Start.Value;
+                settings.Price_MonthCount = (int)Tbx_MonthCount.Value;
+
                 //电价赋值
-
-                foreach (var child in Table_Price.Controls)
+                foreach (var child in LP_PriceSetting.Controls)
                 {
-                    if (child is Panel)
+                    if (child is PriceSettingItem)
                     {
-                        foreach (var item in ((Panel)child).Controls)
+                        var item = (PriceSettingItem)child;
+                        var order = item.Order;
+                        if (!PriceSetting.PriceList.ContainsKey(order))
                         {
-                            try
+                            PriceSetting.PriceList[order] = new PriceSetting.PriceItem()
                             {
-                                if (item is DateTimePicker)
-                                {
-                                    var dateTimePicker = (DateTimePicker)item;
-
-                                    if (dateTimePicker.Name.StartsWith("Date_"))
-                                    {
-                                        var order = dateTimePicker.Name.Replace("Date_", string.Empty).ToInt();
-
-                                        if (!PriceSetting.PriceList.ContainsKey(order))
-                                        {
-                                            PriceSetting.PriceList[order] = new PriceSetting.PriceItem()
-                                            {
-                                                Date = dateTimePicker.Value
-                                            };
-                                        }
-                                        else
-                                        {
-                                            PriceSetting.PriceList[order].Date = dateTimePicker.Value;
-                                        }
-                                    }
-                                }
-                            }
-                            catch
-                            { }
-
-                            try
-                            {
-                                if (item is TextBox)
-                                {
-                                    var textBox = (TextBox)item;
-
-                                    if (textBox.Name.StartsWith("Tbx_Price_"))
-                                    {
-                                        var order = textBox.Name.Replace("Tbx_Price_", string.Empty).ToInt();
-
-                                        decimal? price = null;
-
-                                        if (!string.IsNullOrWhiteSpace(textBox.Text))
-                                        {
-                                            price = textBox.Text.ToDecimal();
-                                        }
-
-                                        if (!PriceSetting.PriceList.ContainsKey(order))
-                                        {
-                                            PriceSetting.PriceList[order] = new PriceSetting.PriceItem()
-                                            {
-                                                Price = price
-                                            };
-                                        }
-                                        else
-                                        {
-                                            PriceSetting.PriceList[order].Price = price;
-                                        }
-                                    }
-                                }
-                            }
-                            catch
-                            { }
+                                Date = item.Date,
+                                Price = item.Price
+                            };
+                        }
+                        else
+                        {
+                            PriceSetting.PriceList[order].Date = item.Date;
+                            PriceSetting.PriceList[order].Price = item.Price;
                         }
                     }
                 }
@@ -728,6 +667,14 @@ namespace PriceAdjustment
                 }));
             }
             catch { }
+        }
+
+        private void Btn_Reset_Click(object sender, EventArgs e)
+        {
+            if (Confirm("重新设置将丢失已经设置的电价数据\r\n请先记录好已配置的每月电价\r\n确定重置？"))
+            {
+                InitPriceSetting(true);
+            }
         }
     }
 }

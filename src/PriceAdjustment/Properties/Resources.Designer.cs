@@ -22,7 +22,7 @@ namespace PriceAdjustment.Properties {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources {
+    public class Resources {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace PriceAdjustment.Properties {
         ///   返回此类使用的缓存的 ResourceManager 实例。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PriceAdjustment.Properties.Resources", typeof(Resources).Assembly);
@@ -51,7 +51,7 @@ namespace PriceAdjustment.Properties {
         ///   重写当前线程的 CurrentUICulture 属性。
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace PriceAdjustment.Properties {
         /// <summary>
         ///   查找类似 本工具仅供学习使用，请勿用于其它用途，造成的后果，概不负责！ 的本地化字符串。
         /// </summary>
-        internal static string About {
+        public static string About {
             get {
                 return ResourceManager.GetString("About", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace PriceAdjustment.Properties {
         /// <summary>
         ///   查找类似 ^(!qaz@edc#rfv%tgb^yh*okm_ujm,)$ 的本地化字符串。
         /// </summary>
-        internal static string Auth_Key {
+        public static string Auth_Key {
             get {
                 return ResourceManager.GetString("Auth_Key", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace PriceAdjustment.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap gril {
+        public static System.Drawing.Bitmap gril {
             get {
                 object obj = ResourceManager.GetObject("gril", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -91,7 +91,7 @@ namespace PriceAdjustment.Properties {
         /// <summary>
         ///   查找 System.Drawing.Bitmap 类型的本地化资源。
         /// </summary>
-        internal static System.Drawing.Bitmap idea {
+        public static System.Drawing.Bitmap idea {
             get {
                 object obj = ResourceManager.GetObject("idea", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
@@ -101,7 +101,7 @@ namespace PriceAdjustment.Properties {
         /// <summary>
         ///   查找类似 Software\Microsoft\Windows\CurrentVersion\Run 的本地化字符串。
         /// </summary>
-        internal static string RegPath_AutoRun {
+        public static string RegPath_AutoRun {
             get {
                 return ResourceManager.GetString("RegPath_AutoRun", resourceCulture);
             }

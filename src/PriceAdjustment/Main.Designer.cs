@@ -74,6 +74,13 @@
             this.Btn_Excute = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.Tbx_MonthCount = new System.Windows.Forms.NumericUpDown();
+            this.label9 = new System.Windows.Forms.Label();
+            this.Btn_Reset = new System.Windows.Forms.Button();
+            this.Date_Start = new System.Windows.Forms.DateTimePicker();
+            this.label7 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Cbx_AutoExit = new System.Windows.Forms.CheckBox();
             this.Cbx_AutoRun = new System.Windows.Forms.CheckBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -88,89 +95,19 @@
             this.Btn_SELE_SC = new System.Windows.Forms.Button();
             this.Btn_OPEN_SC = new System.Windows.Forms.Button();
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.Table_Price = new System.Windows.Forms.TableLayoutPanel();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.Date_12 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_12 = new System.Windows.Forms.TextBox();
-            this.label31 = new System.Windows.Forms.Label();
-            this.label32 = new System.Windows.Forms.Label();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.Date_6 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_6 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.label30 = new System.Windows.Forms.Label();
-            this.panel10 = new System.Windows.Forms.Panel();
-            this.Date_11 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_11 = new System.Windows.Forms.TextBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.label28 = new System.Windows.Forms.Label();
-            this.panel9 = new System.Windows.Forms.Panel();
-            this.Date_5 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_5 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
-            this.label26 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
-            this.Date_10 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_10 = new System.Windows.Forms.TextBox();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.Date_4 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_4 = new System.Windows.Forms.TextBox();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.Date_9 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_9 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.Date_3 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_3 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.Date_8 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_8 = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.Date_2 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_2 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.Date_7 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_7 = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.Date_1 = new System.Windows.Forms.DateTimePicker();
-            this.Tbx_Price_1 = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.LP_PriceSetting = new System.Windows.Forms.FlowLayoutPanel();
             this.statusStrip1.SuspendLayout();
             this.contextMenuStrip.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tbx_MonthCount)).BeginInit();
+            this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tabPage2.SuspendLayout();
             this.tabPage3.SuspendLayout();
             this.tabPage4.SuspendLayout();
-            this.Table_Price.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel10.SuspendLayout();
-            this.panel9.SuspendLayout();
-            this.panel8.SuspendLayout();
-            this.panel7.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
@@ -212,7 +149,7 @@
             this.Tbx_Info.ForeColor = System.Drawing.Color.ForestGreen;
             this.Tbx_Info.Location = new System.Drawing.Point(3, 17);
             this.Tbx_Info.Name = "Tbx_Info";
-            this.Tbx_Info.Size = new System.Drawing.Size(632, 263);
+            this.Tbx_Info.Size = new System.Drawing.Size(632, 219);
             this.Tbx_Info.TabIndex = 2;
             this.Tbx_Info.Text = "操作流程：\n  1. 选取修改后的数据文件保存地址，修改后的MDB文件保存在此\n  2. 多用户配置：\n      1）选择对应MDB MDW文件\n      2" +
     "）配置价格\n      3）选择是否删除指定日期前数据\n  3.商场配置\n      1）选择MDB文件\n      2）配置价格\n      3）选择是否删除" +
@@ -516,7 +453,7 @@
             this.Cbx_AutoStart.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Cbx_AutoStart.AutoSize = true;
             this.Cbx_AutoStart.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Cbx_AutoStart.Location = new System.Drawing.Point(22, 126);
+            this.Cbx_AutoStart.Location = new System.Drawing.Point(68, 24);
             this.Cbx_AutoStart.Name = "Cbx_AutoStart";
             this.Cbx_AutoStart.Size = new System.Drawing.Size(82, 18);
             this.Cbx_AutoStart.TabIndex = 6;
@@ -551,9 +488,9 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.groupBox4.Controls.Add(this.Tbx_Info);
-            this.groupBox4.Location = new System.Drawing.Point(13, 293);
+            this.groupBox4.Location = new System.Drawing.Point(13, 337);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(638, 283);
+            this.groupBox4.Size = new System.Drawing.Size(638, 239);
             this.groupBox4.TabIndex = 6;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "信息：";
@@ -566,7 +503,7 @@
             this.Btn_Excute.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.Btn_Excute.Font = new System.Drawing.Font("宋体", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
             this.Btn_Excute.ForeColor = System.Drawing.Color.DarkRed;
-            this.Btn_Excute.Location = new System.Drawing.Point(276, 251);
+            this.Btn_Excute.Location = new System.Drawing.Point(266, 286);
             this.Btn_Excute.Name = "Btn_Excute";
             this.Btn_Excute.Size = new System.Drawing.Size(121, 36);
             this.Btn_Excute.TabIndex = 12;
@@ -585,29 +522,114 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(640, 233);
+            this.tabControl1.Size = new System.Drawing.Size(640, 258);
             this.tabControl1.TabIndex = 14;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.Cbx_AutoExit);
-            this.tabPage1.Controls.Add(this.Cbx_AutoRun);
+            this.tabPage1.Controls.Add(this.groupBox3);
+            this.tabPage1.Controls.Add(this.groupBox2);
             this.tabPage1.Controls.Add(this.groupBox1);
-            this.tabPage1.Controls.Add(this.Cbx_AutoStart);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(632, 207);
+            this.tabPage1.Size = new System.Drawing.Size(632, 232);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "系统设置";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.Tbx_MonthCount);
+            this.groupBox3.Controls.Add(this.label9);
+            this.groupBox3.Controls.Add(this.Btn_Reset);
+            this.groupBox3.Controls.Add(this.Date_Start);
+            this.groupBox3.Controls.Add(this.label7);
+            this.groupBox3.Location = new System.Drawing.Point(22, 111);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(585, 56);
+            this.groupBox3.TabIndex = 3338;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "电价设置";
+            // 
+            // Tbx_MonthCount
+            // 
+            this.Tbx_MonthCount.Location = new System.Drawing.Point(265, 20);
+            this.Tbx_MonthCount.Maximum = new decimal(new int[] {
+            120,
+            0,
+            0,
+            0});
+            this.Tbx_MonthCount.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.Tbx_MonthCount.Name = "Tbx_MonthCount";
+            this.Tbx_MonthCount.Size = new System.Drawing.Size(63, 21);
+            this.Tbx_MonthCount.TabIndex = 6;
+            this.Tbx_MonthCount.Value = new decimal(new int[] {
+            12,
+            0,
+            0,
+            0});
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(216, 26);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(53, 12);
+            this.label9.TabIndex = 5;
+            this.label9.Text = "总月份：";
+            // 
+            // Btn_Reset
+            // 
+            this.Btn_Reset.Location = new System.Drawing.Point(380, 15);
+            this.Btn_Reset.Name = "Btn_Reset";
+            this.Btn_Reset.Size = new System.Drawing.Size(75, 26);
+            this.Btn_Reset.TabIndex = 4;
+            this.Btn_Reset.Text = "重新设置";
+            this.Btn_Reset.UseVisualStyleBackColor = true;
+            this.Btn_Reset.Click += new System.EventHandler(this.Btn_Reset_Click);
+            // 
+            // Date_Start
+            // 
+            this.Date_Start.CustomFormat = "yyyy年MM月";
+            this.Date_Start.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.Date_Start.Location = new System.Drawing.Point(95, 20);
+            this.Date_Start.Name = "Date_Start";
+            this.Date_Start.Size = new System.Drawing.Size(101, 21);
+            this.Date_Start.TabIndex = 3;
+            this.Date_Start.Value = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(36, 26);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 12);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "起始月份：";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.Cbx_AutoStart);
+            this.groupBox2.Controls.Add(this.Cbx_AutoExit);
+            this.groupBox2.Controls.Add(this.Cbx_AutoRun);
+            this.groupBox2.Location = new System.Drawing.Point(22, 173);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(585, 53);
+            this.groupBox2.TabIndex = 3337;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "自动执行设置";
             // 
             // Cbx_AutoExit
             // 
             this.Cbx_AutoExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Cbx_AutoExit.AutoSize = true;
             this.Cbx_AutoExit.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Cbx_AutoExit.Location = new System.Drawing.Point(283, 126);
+            this.Cbx_AutoExit.Location = new System.Drawing.Point(312, 24);
             this.Cbx_AutoExit.Name = "Cbx_AutoExit";
             this.Cbx_AutoExit.Size = new System.Drawing.Size(152, 18);
             this.Cbx_AutoExit.TabIndex = 3336;
@@ -619,7 +641,7 @@
             this.Cbx_AutoRun.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.Cbx_AutoRun.AutoSize = true;
             this.Cbx_AutoRun.Font = new System.Drawing.Font("宋体", 10.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(134)));
-            this.Cbx_AutoRun.Location = new System.Drawing.Point(144, 126);
+            this.Cbx_AutoRun.Location = new System.Drawing.Point(172, 24);
             this.Cbx_AutoRun.Name = "Cbx_AutoRun";
             this.Cbx_AutoRun.Size = new System.Drawing.Size(110, 18);
             this.Cbx_AutoRun.TabIndex = 3335;
@@ -663,7 +685,7 @@
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(632, 207);
+            this.tabPage2.Size = new System.Drawing.Size(632, 232);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "多用户";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -731,7 +753,7 @@
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage3.Size = new System.Drawing.Size(632, 207);
+            this.tabPage3.Size = new System.Drawing.Size(632, 232);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "商场";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -781,610 +803,23 @@
             // 
             // tabPage4
             // 
-            this.tabPage4.Controls.Add(this.Table_Price);
+            this.tabPage4.Controls.Add(this.LP_PriceSetting);
             this.tabPage4.Location = new System.Drawing.Point(4, 22);
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(632, 207);
+            this.tabPage4.Size = new System.Drawing.Size(632, 232);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "电价设置";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // Table_Price
-            // 
-            this.Table_Price.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Table_Price.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.Table_Price.ColumnCount = 2;
-            this.Table_Price.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Table_Price.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.Table_Price.Controls.Add(this.panel12, 1, 5);
-            this.Table_Price.Controls.Add(this.panel11, 0, 5);
-            this.Table_Price.Controls.Add(this.panel10, 1, 4);
-            this.Table_Price.Controls.Add(this.panel9, 0, 4);
-            this.Table_Price.Controls.Add(this.panel8, 1, 3);
-            this.Table_Price.Controls.Add(this.panel7, 0, 3);
-            this.Table_Price.Controls.Add(this.panel6, 1, 2);
-            this.Table_Price.Controls.Add(this.panel5, 0, 2);
-            this.Table_Price.Controls.Add(this.panel4, 1, 1);
-            this.Table_Price.Controls.Add(this.panel3, 0, 1);
-            this.Table_Price.Controls.Add(this.panel1, 1, 0);
-            this.Table_Price.Controls.Add(this.panel2, 0, 0);
-            this.Table_Price.Location = new System.Drawing.Point(6, 6);
-            this.Table_Price.Name = "Table_Price";
-            this.Table_Price.RowCount = 6;
-            this.Table_Price.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Table_Price.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Table_Price.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Table_Price.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Table_Price.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Table_Price.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 16.66667F));
-            this.Table_Price.Size = new System.Drawing.Size(615, 197);
-            this.Table_Price.TabIndex = 7;
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.Date_12);
-            this.panel12.Controls.Add(this.Tbx_Price_12);
-            this.panel12.Controls.Add(this.label31);
-            this.panel12.Controls.Add(this.label32);
-            this.panel12.Location = new System.Drawing.Point(311, 164);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(252, 27);
-            this.panel12.TabIndex = 17;
-            // 
-            // Date_12
-            // 
-            this.Date_12.CustomFormat = "yyyy年MM月";
-            this.Date_12.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_12.Location = new System.Drawing.Point(39, 3);
-            this.Date_12.Name = "Date_12";
-            this.Date_12.Size = new System.Drawing.Size(79, 21);
-            this.Date_12.TabIndex = 1;
-            this.Date_12.Value = new System.DateTime(2022, 12, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_12
-            // 
-            this.Tbx_Price_12.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_12.Name = "Tbx_Price_12";
-            this.Tbx_Price_12.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_12.TabIndex = 3;
-            this.Tbx_Price_12.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label31
-            // 
-            this.label31.AutoSize = true;
-            this.label31.Location = new System.Drawing.Point(133, 9);
-            this.label31.Name = "label31";
-            this.label31.Size = new System.Drawing.Size(41, 12);
-            this.label31.TabIndex = 2;
-            this.label31.Text = "电价：";
-            // 
-            // label32
-            // 
-            this.label32.AutoSize = true;
-            this.label32.Location = new System.Drawing.Point(3, 9);
-            this.label32.Name = "label32";
-            this.label32.Size = new System.Drawing.Size(41, 12);
-            this.label32.TabIndex = 0;
-            this.label32.Text = "月份：";
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.Date_6);
-            this.panel11.Controls.Add(this.Tbx_Price_6);
-            this.panel11.Controls.Add(this.label29);
-            this.panel11.Controls.Add(this.label30);
-            this.panel11.Location = new System.Drawing.Point(4, 164);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(252, 27);
-            this.panel11.TabIndex = 16;
-            // 
-            // Date_6
-            // 
-            this.Date_6.CustomFormat = "yyyy年MM月";
-            this.Date_6.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_6.Location = new System.Drawing.Point(39, 3);
-            this.Date_6.Name = "Date_6";
-            this.Date_6.Size = new System.Drawing.Size(79, 21);
-            this.Date_6.TabIndex = 1;
-            this.Date_6.Value = new System.DateTime(2022, 6, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_6
-            // 
-            this.Tbx_Price_6.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_6.Name = "Tbx_Price_6";
-            this.Tbx_Price_6.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_6.TabIndex = 3;
-            this.Tbx_Price_6.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label29
-            // 
-            this.label29.AutoSize = true;
-            this.label29.Location = new System.Drawing.Point(133, 9);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(41, 12);
-            this.label29.TabIndex = 2;
-            this.label29.Text = "电价：";
-            // 
-            // label30
-            // 
-            this.label30.AutoSize = true;
-            this.label30.Location = new System.Drawing.Point(3, 9);
-            this.label30.Name = "label30";
-            this.label30.Size = new System.Drawing.Size(41, 12);
-            this.label30.TabIndex = 0;
-            this.label30.Text = "月份：";
-            // 
-            // panel10
-            // 
-            this.panel10.Controls.Add(this.Date_11);
-            this.panel10.Controls.Add(this.Tbx_Price_11);
-            this.panel10.Controls.Add(this.label27);
-            this.panel10.Controls.Add(this.label28);
-            this.panel10.Location = new System.Drawing.Point(311, 132);
-            this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(252, 25);
-            this.panel10.TabIndex = 15;
-            // 
-            // Date_11
-            // 
-            this.Date_11.CustomFormat = "yyyy年MM月";
-            this.Date_11.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_11.Location = new System.Drawing.Point(39, 3);
-            this.Date_11.Name = "Date_11";
-            this.Date_11.Size = new System.Drawing.Size(79, 21);
-            this.Date_11.TabIndex = 1;
-            this.Date_11.Value = new System.DateTime(2022, 11, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_11
-            // 
-            this.Tbx_Price_11.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_11.Name = "Tbx_Price_11";
-            this.Tbx_Price_11.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_11.TabIndex = 3;
-            this.Tbx_Price_11.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label27
-            // 
-            this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(133, 9);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(41, 12);
-            this.label27.TabIndex = 2;
-            this.label27.Text = "电价：";
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(3, 9);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(41, 12);
-            this.label28.TabIndex = 0;
-            this.label28.Text = "月份：";
-            // 
-            // panel9
-            // 
-            this.panel9.Controls.Add(this.Date_5);
-            this.panel9.Controls.Add(this.Tbx_Price_5);
-            this.panel9.Controls.Add(this.label25);
-            this.panel9.Controls.Add(this.label26);
-            this.panel9.Location = new System.Drawing.Point(4, 132);
-            this.panel9.Name = "panel9";
-            this.panel9.Size = new System.Drawing.Size(252, 25);
-            this.panel9.TabIndex = 14;
-            // 
-            // Date_5
-            // 
-            this.Date_5.CustomFormat = "yyyy年MM月";
-            this.Date_5.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_5.Location = new System.Drawing.Point(39, 3);
-            this.Date_5.Name = "Date_5";
-            this.Date_5.Size = new System.Drawing.Size(79, 21);
-            this.Date_5.TabIndex = 1;
-            this.Date_5.Value = new System.DateTime(2022, 5, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_5
-            // 
-            this.Tbx_Price_5.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_5.Name = "Tbx_Price_5";
-            this.Tbx_Price_5.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_5.TabIndex = 3;
-            this.Tbx_Price_5.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label25
-            // 
-            this.label25.AutoSize = true;
-            this.label25.Location = new System.Drawing.Point(133, 9);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(41, 12);
-            this.label25.TabIndex = 2;
-            this.label25.Text = "电价：";
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(3, 9);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(41, 12);
-            this.label26.TabIndex = 0;
-            this.label26.Text = "月份：";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.Date_10);
-            this.panel8.Controls.Add(this.Tbx_Price_10);
-            this.panel8.Controls.Add(this.label23);
-            this.panel8.Controls.Add(this.label24);
-            this.panel8.Location = new System.Drawing.Point(311, 100);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(252, 25);
-            this.panel8.TabIndex = 13;
-            // 
-            // Date_10
-            // 
-            this.Date_10.CustomFormat = "yyyy年MM月";
-            this.Date_10.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_10.Location = new System.Drawing.Point(39, 3);
-            this.Date_10.Name = "Date_10";
-            this.Date_10.Size = new System.Drawing.Size(79, 21);
-            this.Date_10.TabIndex = 1;
-            this.Date_10.Value = new System.DateTime(2022, 10, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_10
-            // 
-            this.Tbx_Price_10.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_10.Name = "Tbx_Price_10";
-            this.Tbx_Price_10.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_10.TabIndex = 3;
-            this.Tbx_Price_10.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(133, 9);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(41, 12);
-            this.label23.TabIndex = 2;
-            this.label23.Text = "电价：";
-            // 
-            // label24
-            // 
-            this.label24.AutoSize = true;
-            this.label24.Location = new System.Drawing.Point(3, 9);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(41, 12);
-            this.label24.TabIndex = 0;
-            this.label24.Text = "月份：";
-            // 
-            // panel7
-            // 
-            this.panel7.Controls.Add(this.Date_4);
-            this.panel7.Controls.Add(this.Tbx_Price_4);
-            this.panel7.Controls.Add(this.label21);
-            this.panel7.Controls.Add(this.label22);
-            this.panel7.Location = new System.Drawing.Point(4, 100);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(252, 25);
-            this.panel7.TabIndex = 12;
-            // 
-            // Date_4
-            // 
-            this.Date_4.CustomFormat = "yyyy年MM月";
-            this.Date_4.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_4.Location = new System.Drawing.Point(39, 3);
-            this.Date_4.Name = "Date_4";
-            this.Date_4.Size = new System.Drawing.Size(79, 21);
-            this.Date_4.TabIndex = 1;
-            this.Date_4.Value = new System.DateTime(2022, 4, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_4
-            // 
-            this.Tbx_Price_4.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_4.Name = "Tbx_Price_4";
-            this.Tbx_Price_4.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_4.TabIndex = 3;
-            this.Tbx_Price_4.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label21
-            // 
-            this.label21.AutoSize = true;
-            this.label21.Location = new System.Drawing.Point(133, 9);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(41, 12);
-            this.label21.TabIndex = 2;
-            this.label21.Text = "电价：";
-            // 
-            // label22
-            // 
-            this.label22.AutoSize = true;
-            this.label22.Location = new System.Drawing.Point(3, 9);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(41, 12);
-            this.label22.TabIndex = 0;
-            this.label22.Text = "月份：";
-            // 
-            // panel6
-            // 
-            this.panel6.Controls.Add(this.Date_9);
-            this.panel6.Controls.Add(this.Tbx_Price_9);
-            this.panel6.Controls.Add(this.label19);
-            this.panel6.Controls.Add(this.label20);
-            this.panel6.Location = new System.Drawing.Point(311, 68);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(252, 25);
-            this.panel6.TabIndex = 11;
-            // 
-            // Date_9
-            // 
-            this.Date_9.CustomFormat = "yyyy年MM月";
-            this.Date_9.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_9.Location = new System.Drawing.Point(39, 3);
-            this.Date_9.Name = "Date_9";
-            this.Date_9.Size = new System.Drawing.Size(79, 21);
-            this.Date_9.TabIndex = 1;
-            this.Date_9.Value = new System.DateTime(2022, 9, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_9
-            // 
-            this.Tbx_Price_9.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_9.Name = "Tbx_Price_9";
-            this.Tbx_Price_9.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_9.TabIndex = 3;
-            this.Tbx_Price_9.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(133, 9);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(41, 12);
-            this.label19.TabIndex = 2;
-            this.label19.Text = "电价：";
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Location = new System.Drawing.Point(3, 9);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(41, 12);
-            this.label20.TabIndex = 0;
-            this.label20.Text = "月份：";
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.Date_3);
-            this.panel5.Controls.Add(this.Tbx_Price_3);
-            this.panel5.Controls.Add(this.label17);
-            this.panel5.Controls.Add(this.label18);
-            this.panel5.Location = new System.Drawing.Point(4, 68);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(252, 25);
-            this.panel5.TabIndex = 10;
-            // 
-            // Date_3
-            // 
-            this.Date_3.CustomFormat = "yyyy年MM月";
-            this.Date_3.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_3.Location = new System.Drawing.Point(39, 3);
-            this.Date_3.Name = "Date_3";
-            this.Date_3.Size = new System.Drawing.Size(79, 21);
-            this.Date_3.TabIndex = 1;
-            this.Date_3.Value = new System.DateTime(2022, 3, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_3
-            // 
-            this.Tbx_Price_3.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_3.Name = "Tbx_Price_3";
-            this.Tbx_Price_3.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_3.TabIndex = 3;
-            this.Tbx_Price_3.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(133, 9);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(41, 12);
-            this.label17.TabIndex = 2;
-            this.label17.Text = "电价：";
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(3, 9);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(41, 12);
-            this.label18.TabIndex = 0;
-            this.label18.Text = "月份：";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.Date_8);
-            this.panel4.Controls.Add(this.Tbx_Price_8);
-            this.panel4.Controls.Add(this.label15);
-            this.panel4.Controls.Add(this.label16);
-            this.panel4.Location = new System.Drawing.Point(311, 36);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(252, 25);
-            this.panel4.TabIndex = 9;
-            // 
-            // Date_8
-            // 
-            this.Date_8.CustomFormat = "yyyy年MM月";
-            this.Date_8.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_8.Location = new System.Drawing.Point(39, 3);
-            this.Date_8.Name = "Date_8";
-            this.Date_8.Size = new System.Drawing.Size(79, 21);
-            this.Date_8.TabIndex = 1;
-            this.Date_8.Value = new System.DateTime(2022, 8, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_8
-            // 
-            this.Tbx_Price_8.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_8.Name = "Tbx_Price_8";
-            this.Tbx_Price_8.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_8.TabIndex = 3;
-            this.Tbx_Price_8.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(133, 9);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(41, 12);
-            this.label15.TabIndex = 2;
-            this.label15.Text = "电价：";
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(3, 9);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(41, 12);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "月份：";
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.Date_2);
-            this.panel3.Controls.Add(this.Tbx_Price_2);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label14);
-            this.panel3.Location = new System.Drawing.Point(4, 36);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(252, 25);
-            this.panel3.TabIndex = 8;
-            // 
-            // Date_2
-            // 
-            this.Date_2.CustomFormat = "yyyy年MM月";
-            this.Date_2.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_2.Location = new System.Drawing.Point(39, 3);
-            this.Date_2.Name = "Date_2";
-            this.Date_2.Size = new System.Drawing.Size(79, 21);
-            this.Date_2.TabIndex = 1;
-            this.Date_2.Value = new System.DateTime(2022, 2, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_2
-            // 
-            this.Tbx_Price_2.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_2.Name = "Tbx_Price_2";
-            this.Tbx_Price_2.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_2.TabIndex = 3;
-            this.Tbx_Price_2.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(133, 9);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(41, 12);
-            this.label13.TabIndex = 2;
-            this.label13.Text = "电价：";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(3, 9);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(41, 12);
-            this.label14.TabIndex = 0;
-            this.label14.Text = "月份：";
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.Date_7);
-            this.panel1.Controls.Add(this.Tbx_Price_7);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.label12);
-            this.panel1.Location = new System.Drawing.Point(311, 4);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(252, 25);
-            this.panel1.TabIndex = 7;
-            // 
-            // Date_7
-            // 
-            this.Date_7.CustomFormat = "yyyy年MM月";
-            this.Date_7.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_7.Location = new System.Drawing.Point(39, 3);
-            this.Date_7.Name = "Date_7";
-            this.Date_7.Size = new System.Drawing.Size(79, 21);
-            this.Date_7.TabIndex = 1;
-            this.Date_7.Value = new System.DateTime(2022, 7, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_7
-            // 
-            this.Tbx_Price_7.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_7.Name = "Tbx_Price_7";
-            this.Tbx_Price_7.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_7.TabIndex = 3;
-            this.Tbx_Price_7.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(133, 9);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(41, 12);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "电价：";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(3, 9);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(41, 12);
-            this.label12.TabIndex = 0;
-            this.label12.Text = "月份：";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.Date_1);
-            this.panel2.Controls.Add(this.Tbx_Price_1);
-            this.panel2.Controls.Add(this.label9);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Location = new System.Drawing.Point(4, 4);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(252, 25);
-            this.panel2.TabIndex = 6;
-            // 
-            // Date_1
-            // 
-            this.Date_1.CustomFormat = "yyyy年MM月";
-            this.Date_1.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.Date_1.Location = new System.Drawing.Point(39, 3);
-            this.Date_1.Name = "Date_1";
-            this.Date_1.Size = new System.Drawing.Size(79, 21);
-            this.Date_1.TabIndex = 1;
-            this.Date_1.Value = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
-            // 
-            // Tbx_Price_1
-            // 
-            this.Tbx_Price_1.Location = new System.Drawing.Point(168, 3);
-            this.Tbx_Price_1.Name = "Tbx_Price_1";
-            this.Tbx_Price_1.Size = new System.Drawing.Size(79, 21);
-            this.Tbx_Price_1.TabIndex = 3;
-            this.Tbx_Price_1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(133, 9);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(41, 12);
-            this.label9.TabIndex = 2;
-            this.label9.Text = "电价：";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 9);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(41, 12);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "月份：";
+            // LP_PriceSetting
+            // 
+            this.LP_PriceSetting.AutoScroll = true;
+            this.LP_PriceSetting.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.LP_PriceSetting.Location = new System.Drawing.Point(3, 3);
+            this.LP_PriceSetting.Name = "LP_PriceSetting";
+            this.LP_PriceSetting.Size = new System.Drawing.Size(626, 226);
+            this.LP_PriceSetting.TabIndex = 0;
             // 
             // Main
             // 
@@ -1399,7 +834,6 @@
             this.MinimumSize = new System.Drawing.Size(680, 640);
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "调整小助手 V1.1";
             this.Load += new System.EventHandler(this.Main_Load);
             this.SizeChanged += new System.EventHandler(this.Main_SizeChanged);
             this.statusStrip1.ResumeLayout(false);
@@ -1408,7 +842,11 @@
             this.groupBox4.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Tbx_MonthCount)).EndInit();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
@@ -1416,31 +854,6 @@
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             this.tabPage4.ResumeLayout(false);
-            this.Table_Price.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel12.PerformLayout();
-            this.panel11.ResumeLayout(false);
-            this.panel11.PerformLayout();
-            this.panel10.ResumeLayout(false);
-            this.panel10.PerformLayout();
-            this.panel9.ResumeLayout(false);
-            this.panel9.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1495,67 +908,6 @@
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TabPage tabPage4;
-        private System.Windows.Forms.DateTimePicker Date_1;
-        private System.Windows.Forms.TextBox Tbx_Price_1;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TableLayoutPanel Table_Price;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.DateTimePicker Date_12;
-        private System.Windows.Forms.TextBox Tbx_Price_12;
-        private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.DateTimePicker Date_6;
-        private System.Windows.Forms.TextBox Tbx_Price_6;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.Panel panel10;
-        private System.Windows.Forms.DateTimePicker Date_11;
-        private System.Windows.Forms.TextBox Tbx_Price_11;
-        private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.DateTimePicker Date_5;
-        private System.Windows.Forms.TextBox Tbx_Price_5;
-        private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.DateTimePicker Date_10;
-        private System.Windows.Forms.TextBox Tbx_Price_10;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.DateTimePicker Date_4;
-        private System.Windows.Forms.TextBox Tbx_Price_4;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.DateTimePicker Date_9;
-        private System.Windows.Forms.TextBox Tbx_Price_9;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.DateTimePicker Date_3;
-        private System.Windows.Forms.TextBox Tbx_Price_3;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.DateTimePicker Date_8;
-        private System.Windows.Forms.TextBox Tbx_Price_8;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DateTimePicker Date_2;
-        private System.Windows.Forms.TextBox Tbx_Price_2;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DateTimePicker Date_7;
-        private System.Windows.Forms.TextBox Tbx_Price_7;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.TextBox Tbx_DB_TARGET_PATH_DYH;
         private System.Windows.Forms.Button Btn_SELE_DYH;
@@ -1566,6 +918,14 @@
         private System.Windows.Forms.Button Btn_OPEN_SC;
         private System.Windows.Forms.CheckBox Cbx_AutoRun;
         private System.Windows.Forms.CheckBox Cbx_AutoExit;
+        private System.Windows.Forms.FlowLayoutPanel LP_PriceSetting;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.DateTimePicker Date_Start;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button Btn_Reset;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.NumericUpDown Tbx_MonthCount;
     }
 }
 

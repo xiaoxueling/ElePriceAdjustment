@@ -122,6 +122,12 @@
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\PriceSetting.cs" />
+    <Compile Include="PriceSettingItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PriceSettingItem.Designer.cs">
+      <DependentUpon>PriceSettingItem.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
@@ -147,8 +153,11 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PriceSettingItem.resx">
+      <DependentUpon>PriceSettingItem.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="app.config" />
