@@ -38,7 +38,6 @@ namespace PriceAdjustment.Model
             {
                 if (reset)
                 {
-                    
                     oldDic = PriceList.Values.GroupBy(m => m.Date.ToString("yyyy-MM")).ToDictionary(k => k.Key, v => v.FirstOrDefault().Price);
                     PriceList = new Dictionary<int, PriceItem>(count);
                 }
