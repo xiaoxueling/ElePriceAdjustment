@@ -396,11 +396,10 @@ namespace PriceAdjustment
 
         private void InitPriceSetting(bool reset=false)
         {
-            var priceData = string.Empty;
+            Settings settings = Settings.Default;
+
             if (!reset)
             {
-                Settings settings = Settings.Default;
-
                 if (settings.Price_StartMonth < DateTime.Now.AddYears(-10))
                 {
                     settings.Price_StartMonth = DateTime.Now.AddDays(-1 * DateTime.Now.Day + 1).AddMonths(-1 * DateTime.Now.Month + 1);
@@ -408,15 +407,13 @@ namespace PriceAdjustment
 
                 Date_Start.Value = settings.Price_StartMonth;
                 Tbx_MonthCount.Value = settings.Price_MonthCount;
-                priceData = settings.PRICE_DATA;
             }
             else
             {
-                PriceSetting.PriceList = null;
                 LP_PriceSetting.Controls.Clear();
             }
 
-            PriceSetting.Parse(Date_Start.Value, (int)Tbx_MonthCount.Value, priceData);
+            PriceSetting.Parse(reset,Date_Start.Value, (int)Tbx_MonthCount.Value, settings.PRICE_DATA);
 
             //电价设置
             for (int i = 0; i < PriceSetting.PriceList.Count; i++)
@@ -671,7 +668,7 @@ namespace PriceAdjustment
 
         private void Btn_Reset_Click(object sender, EventArgs e)
         {
-            if (Confirm("重新设置将丢失已经设置的电价数据\r\n请先记录好已配置的每月电价\r\n确定重置？"))
+            if (Confirm("重新设置可能丢失已经设置的电价数据\r\n请先记录好已配置的每月电价\r\n确定重设？"))
             {
                 InitPriceSetting(true);
             }

@@ -20,8 +20,10 @@ namespace PriceAdjustment.Model
         /// <summary>
         /// 解析
         /// </summary>
-        public static void Parse(DateTime startMonth,int count,string data)
+        public static void Parse(bool reset, DateTime startMonth,int count,string data)
         {
+            Dictionary<string, decimal?> oldDic = null;
+
             if (!string.IsNullOrWhiteSpace(data))
             {
                 PriceList = DataConvert.JsonDeserialize<Dictionary<int, PriceItem>>(data);
@@ -29,21 +31,47 @@ namespace PriceAdjustment.Model
 
             if (PriceList == null)
             {
-                PriceList = new Dictionary<int, PriceItem>(12);
+                PriceList = new Dictionary<int, PriceItem>(count);
             }
+
+            try
+            {
+                if (reset)
+                {
+                    
+                    oldDic = PriceList.Values.GroupBy(m => m.Date.ToString("yyyy-MM")).ToDictionary(k => k.Key, v => v.FirstOrDefault().Price);
+                    PriceList = new Dictionary<int, PriceItem>(count);
+                }
+            }
+            catch
+            {}
 
             for (int i = 0; i < count; i++)
             {
-                if (PriceList.ContainsKey(i))
+                decimal? price = null;
+                var date = startMonth.AddMonths(i);
+
+                if (!reset)
                 {
-                    continue;
+                    if (PriceList.ContainsKey(i))
+                    {
+                        continue;
+                    }
+                }
+                else
+                {
+                    var key = date.ToString("yyyy-MM");
+                    if (oldDic.ContainsKey(key))
+                    {
+                        price = oldDic[key];
+                    }
                 }
 
                 var item = new PriceItem
                 {
-                    Date = startMonth.AddMonths(i)
+                    Date = date,
+                    Price = price
                 };
-
                 PriceList.Add(i, item);
             }
 
