@@ -65,6 +65,7 @@
             this.Tbx_Price.Name = "Tbx_Price";
             this.Tbx_Price.Size = new System.Drawing.Size(79, 21);
             this.Tbx_Price.TabIndex = 3;
+            this.Tbx_Price.KeyUp += new System.Windows.Forms.KeyEventHandler(this.Price_KeyUp);
             // 
             // label9
             // 

@@ -34,5 +34,31 @@ namespace PriceAdjustment
         }
 
         public int Order { get; set; }
+
+        /// <summary>
+        /// 数字判断
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Price_KeyUp(object sender, KeyEventArgs e)
+        {
+
+            try
+            {
+                if (sender is TextBox)
+                {
+                    TextBox textBox = (sender as TextBox);
+                    string value = textBox.Text;
+
+                    if (!string.IsNullOrWhiteSpace(value) && !value.EndsWith(".") && !value.IsDecimal())
+                    {
+                        textBox.Text = value.Substring(0, value.Length - 1).ToDecimal().ToString();
+                        textBox.SelectionStart = textBox.Text.Length;
+                    }
+                }
+            }
+            catch
+            { }
+        }
     }
 }
